@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate Download Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Certificate of Participation</h1>
+    <p>Enter your name below to generate your participation certificate.</p>
+
+    <input type="text" id="nameInput" placeholder="Enter your full name" />
+    <button id="generateBtn">Generate Certificate</button>
+
+    <p id="loadingText" class="hidden">Generating PDF... please wait.</p>
+
+    <div id="certificateWrapper" class="hidden">
+      <div id="certificateContainer">
+        <img id="certificateBg" src="certificate.jpg" alt="Certificate" />
+        <div id="participantName"></div>
+      </div>
+     <!--<button id="downloadBtn">Download as PDF</button> -->
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
